@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complexe Scolaire Question de Foi - Kalemie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .section-divider {
+            height: 100px;
+            background: linear-gradient(180deg, transparent, #1e293b);
+        }
+        
+        .footer-links a:hover {
+            color: #8b5cf6;
+        }
+        
+        .equality-icon {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .mission-statement {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+            border-left: 4px solid #8b5cf6;
+        }
+        
+        .logo-container {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid #3b82f6;
+        }
+        
+        .logo-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-gray-900 border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="logo-container mr-3">
+                            <img src="https://images.unsplash.com/photo-1588072432836-e10032781450?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" 
+                                 alt="Logo Question de Foi - Enfant en uniforme" 
+                                 class="logo-image">
+                        </div>
+                        <a href="#" class="text-2xl font-bold gradient-text">Question de Foi</a>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="#" class="text-indigo-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Accueil</a>
+                            <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">À propos</a>
+                            <a href="#programs" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Programmes</a>
+                            <a href="#admissions" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Admissions</a>
+                            <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-4 flex items-center md:ml-6">
+                        <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium">Portail Étudiant</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="text-indigo-300 block px-3 py-2 rounded-md text-base font-medium">Accueil</a>
+                <a href="#about" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">À propos</a>
+                <a href="#programs" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Programmes</a>
+                <a href="#admissions" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Admissions</a>
+                <a href="#contact" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white block px-3 py-2 rounded-md text-base font-medium">Portail Étudiant</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="text-center">
+                <div class="flex justify-center mb-8">
+                    <div class="logo-container" style="width: 120px; height: 120px; border-width: 3px;">
+                        <img src="https://images.unsplash.com/photo-1588072432836-e10032781450?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" 
+                             alt="Logo principal - Enfant en uniforme" 
+                             class="logo-image">
+                    </div>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    <span class="gradient-text">Complexe Scolaire</span><br>
+                    <span class="text-white">Question de Foi</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
+                    Éducation inclusive et équitable pour tous les enfants, sans distinction
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#admissions" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-md text-lg font-semibold transition duration-300">S'inscrire</a>
+                    <a href="#programs" class="bg-gray-800 hover:bg-gray-700 text-white px-8 py-3 rounded-md text-lg font-semibold transition duration-300">Nos Programmes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">Notre Mission</h2>
+                <div class="w-24 h-1 bg-indigo-500 mx-auto mb-6"></div>
+                
+                <div class="mission-statement p-6 rounded-lg mb-8 text-left max-w-4xl mx-auto">
+                    <p class="text-xl md:text-2xl font-medium text-center">
+                        <i class="fas fa-quote-left text-indigo-400 mr-2"></i>
+                        Former tous les enfants, filles et garçons, riches ou pauvres, dans un environnement sûr et respectueux de la dignité humaine
+                        <i class="fas fa-quote-right text-indigo-400 ml-2"></i>
+                    </p>
+                </div>
+                
+                <p class="text-xl text-gray-300 max-w-4xl mx-auto">
+                    Nous nous engageons à fournir une éducation de qualité accessible à tous, sans aucune forme de discrimination ou de violence.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-8 rounded-lg card-hover transition duration-300">
+                    <div class="text-indigo-400 text-4xl mb-4">
+                        <i class="fas fa-child-reaching"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Inclusion</h3>
+                    <p class="text-gray-300">Nous accueillons tous les enfants sans distinction d'origine, de genre ou de situation économique.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg card-hover transition duration-300">
+                    <div class="text-indigo-400 text-4xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Excellence</h3>
+                    <p class="text-gray-300">Un programme éducatif rigoureux pour préparer les élèves aux défis du monde moderne.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-lg card-hover transition duration-300">
+                    <div class="text-indigo-400 text-4xl mb-4">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Bienveillance</h3>
+                    <p class="text-gray-300">Un environnement sécurisé où chaque enfant peut s'épanouir pleinement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-20 bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">Nos Programmes</h2>
+                <div class="w-24 h-1 bg-indigo-500 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Des programmes éducatifs adaptés à chaque niveau de développement de l'enfant.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-8 rounded-lg card-hover transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-indigo-600 text-white p-3 rounded-full mr-4">
+                            <i class="fas fa-school text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Maternelle</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Un environnement stimulant pour les tout-petits avec des activités adaptées à leur développement.</p>
+                    <ul class="text-gray-400 space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-indigo-400 mr-2"></i> Éveil sensoriel
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-indigo-400 mr-2"></i> Socialisation
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-indigo-400 mr-2"></i> Pré-lecture
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-900 p-8 rounded-lg card-hover transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-indigo-600 text-white p-3 rounded-full mr-4">
+                            <i class="fas fa-pencil-alt text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Primaire</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Acquisition des fondamentaux avec une pédagogie active et participative.</p>
+                    <ul class="text-gray-400 space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-indigo-400 mr-2"></i> Lecture-écriture
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-indigo-400 mr-2"></i> Mathématiques
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-indigo-400 mr-2"></i> Sciences et environnement
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-900 p-8 rounded-lg card-hover transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-indigo-600 text-white p-3 rounded-full mr-4">
+                            <i class="fas fa-book text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Secondaire</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Approfondissement des connaissances et préparation aux études supérieures.</p>
+                    <ul class="text-gray-400 space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-indigo-400 mr-2"></i> Langues vivantes
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-indigo-400 mr-2"></i> Sciences humaines
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-indigo-400 mr-2"></i> Orientation professionnelle
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section id="admissions" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">Admissions</h2>
+                <div class="w-24 h-1 bg-indigo-500 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Rejoignez notre communauté éducative inclusive et bienveillante.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-white">Processus d'Admission</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-600 text-white
+</body>
+</html>
